@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="myList">
+        <li>Mango</li>
+    </ul>
+    <script>
+        let main = document.createElement("div");
+        main.innerText = "Hello hi ok bye";
+        document.body.appendChild(main)
+
+        let list = document.createElement("li");
+        let myList = document.querySelector(".myList");
+        list.innerText = "Apple";
+        myList.appendChild(list);
+    </script>
+</body>
+</html>

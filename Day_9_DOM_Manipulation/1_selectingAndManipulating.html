@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50vh;
+            height: 50vh;
+            background-color: aqua;
+        }
+        html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="main">Hello my name is Rahul</p>
+    <div class="container"></div>
+    <script>
+        let para = document.querySelector("#main");
+        para.innerHTML = "Hello my name is Kaushal";
+        let container = document.querySelector(".container");
+        container.addEventListener("click",()=>{
+            container.style.backgroundColor = 'blue';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vh;
+            background-color: aqua;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerClick{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" class="myLink">Google</a>
+
+    <div class="container">
+
+    </div>
+    <script>
+        let anc = document.querySelector("a");
+        anc.setAttribute("href","https://www.bing.com");
+
+        let cont = document.querySelector(".container");
+        cont.addEventListener("click",()=>{
+            cont.classList.toggle("containerClick");
+        })
+    </script>
+</body>
+</html>

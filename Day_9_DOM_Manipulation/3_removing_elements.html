@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="myPara">Hello my name is Rahul</p>
+    <ul class="myList">
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <script>
+        let para = document.querySelector(".myPara");
+        para.addEventListener("click",()=>{
+            para.remove();
+        })
+
+        //remove last child
+
+        let list = document.querySelector(".myList");
+        if(list.lastChild){
+            list.removeChild(list.lastElementChild);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"placeholder="Enter text">
+    <p id="my-para">hi</p>
+    <script>
+        let inp = document.querySelector("input");
+        inp.addEventListener("keydown",(evet)=>{
+            console.log(evet.key);
+        })
+
+        let para = document.querySelector("#my-para");
+
+        inp.addEventListener("keyup",(event)=>{
+            para.textContent = inp.value;
+        })
+    </script>
+</body>
+</html>

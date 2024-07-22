@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 30rem;
+            width: 30rem;
+            background-color: aqua;
+        }
+        .toggle{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        let container = document.querySelector(".container");
+        container.addEventListener("mouseover",()=>{
+            container.classList.add("toggle");
+        })
+        container.addEventListener("mouseout",()=>{
+            container.classList.remove("toggle");
+        })
+    </script>
+</body>
+</html>

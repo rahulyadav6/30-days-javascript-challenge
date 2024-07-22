@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-container{
+            height: 200px;
+            width: 200px;
+            object-fit: contain;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello ji</p>
+    <button>Click me</button>
+    <br>
+    <br>
+    <div>
+        <button id="toggle">Show image</button>
+  
+        <img id="myImage"
+           src="https://images.pexels.com/photos/65438/pexels-photo-65438.jpeg?auto=compress&cs=tinysrgb&w=400"
+           alt="image building">
+     </div>
+    <script>
+        let para = document.querySelector("p");
+        let btn = document.querySelector("button");
+        btn.addEventListener("click",()=>{
+            para.innerText ="Hare Krishna";
+        })
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+      const myImage = document.getElementById("myImage");
+      const toggle = document.getElementById("toggle");
+
+      toggle.addEventListener("dblclick", () => {
+         if (myImage.style.visibility === "hidden") {
+            myImage.style.visibility = "visible";
+         } else {
+            myImage.style.visibility = "hidden";
+         }
+      })
+   })
+
+    </script>
+</body>
+</html>

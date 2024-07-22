@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="addChild">Add child</button>
+        <ul id="myList">
+
+        </ul>
+    </div>
+    <script>
+        let parent = document.querySelector("#parent");
+        let addChildBtn = document.querySelector("button");
+        let list = document.querySelector("#myList");
+
+
+        addChildBtn.addEventListener("click",()=>{
+            let newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            list.appendChild(newItem);
+        });
+
+        parent.addEventListener("click",(event)=>{
+            if(event.target && event.target.nodeName === "LI"){
+                console.log(`${event.target.textContent}`);
+            }
+        })
+
+
+    </script>
+</body>
+</html>
